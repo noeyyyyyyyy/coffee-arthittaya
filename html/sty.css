@@ -1,0 +1,108 @@
+/* รีเช็ตหน้าจอ */
+*{
+   margin: 0; /*ขอบ บน ล่าง ซ้าย ขวา*/
+   padding: 0; /* ระยะห่าง บน ล่าง ซ้าย ขวา*/
+   box-sizing: border-box; /*กำหนดให้เป็นกล่อง*/
+}
+
+/* css กล่องที่ 1 */
+nav {
+   display: flex; /* กำหนดให้กล่องเมนู เรียงต่อกัน */
+   justify-content: space-between; /* ดันกล่องให้ ชิดซ้าย-ขวา กระจายออก */
+   padding: 10px; /* border:1px solid red; */
+   background-color: rgb(248, 156, 51);
+}
+   
+/* กำหนดกล่อง logo เเละ link a */
+.logo a {
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
+   font-size: 30px;
+}
+
+/* กำหนดกล่อง menu */
+.menu{
+   display: flex;
+   list-style: none;
+}
+
+/* กำหนดกล่อง menu ย่อย li */
+.menu li{
+   margin-left: 20px;
+}
+
+/* กำหนดกล่อง menu ย่อย li a */
+.menu li a{
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+/* กำหนด กล่องที่ 2 class banner */
+.banner{
+   background-color: rgb(223, 151, 103);
+   color: #ffffff;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.banner h1{
+   margin-top: 20px;
+   color: hwb(36 46% 3%);
+}
+
+.banner-info{
+   text-align: center;
+}
+
+/* เข้าถึงการปรับขนาดรูปภาพ */
+.banner-info img{
+   width: 300px;
+   border-radius:100% ;
+}
+
+.banner-info p{
+   /* background-color: bisque; */
+   color: hwb(29 1% 51%);
+   /* border-radius: 20px;
+   padding: 10px; */
+}
+
+/* กำหนด css กล่องที่3 */
+/* จัดการเเสดงหน้าจอแบบคอลัมน์ grid */
+main{
+   display: grid; /* แสดงผลแบบคอลัมน์*/
+    grid-template-columns: 1fr 1fr 1fr; /* กำหนด 3 คอลัมน์*/
+   }
+
+main div{
+      padding: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+      
+}  
+
+main div p{
+   margin-top: 10px;
+   padding: 0.5rem;
+} 
+
+main img{
+   width: 100%; /* กำหนดความกว้างรูปภาพ */
+   border-radius: 100%;  /* กำหนดขอบโค้งมน รูปภาพ */
+}
+/* กำหนด footer */
+/* กำหนด CSS กล่องที่ 4  */
+/* กำหนด footer */
+footer{
+   background-color: rgb(192, 149, 68); /* กำหนดสีพื้นหลัง footer */
+   color: azure;  /* กำหนดสีอักษร ข้อความ */ 
+   padding: 20px;  /*  ระยะห่างรอบด้าน จากขอบ */ 
+   text-align: center; /* กึ่งกลางแนวตั้ง */
+}
+
+.P01 img{
+   border-radius: 20px;
+}
